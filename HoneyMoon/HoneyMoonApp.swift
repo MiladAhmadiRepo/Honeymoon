@@ -19,7 +19,7 @@ struct HoneyMoonApp: App {
 
                 }else
                 {
-                    ContentView()
+                    SplashView()
                 }
             }.onAppear{
                 DispatchQueue.main.asyncAfter(deadline: .now()+2.5){
