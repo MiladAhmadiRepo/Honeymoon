@@ -2,13 +2,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showAlert : Bool = false;
+    @State var showGuide : Bool = false;
     var body: some View {
         VStack(){
-            HeaderView()
+            HeaderView(showGuidingView: $showGuide)
             Spacer()
-            CardView()
+            CardView(honeyMoon:honeyMoonData[2] ).padding()
             Spacer()
-            FooterView()
+            FooterView(showBookingAlert: $showAlert)
         }
     }
 }

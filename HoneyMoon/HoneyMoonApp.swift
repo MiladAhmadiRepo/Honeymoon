@@ -15,7 +15,8 @@ struct HoneyMoonApp: App {
             ZStack {
                 if(isActive)
                 {
-                    CardView(honeyMoon: honeyMoonData[1])
+//                    CardView(honeyMoon: honeyMoonData[1])
+                    ContentView()
 
                 }else
                 {
